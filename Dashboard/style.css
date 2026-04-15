@@ -1,0 +1,99 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.productSection {
+    padding: 20px;
+    background-color: antiquewhite;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.productRow {
+    display: grid;
+    grid-template-columns: 20% auto;
+    gap: 20px;
+
+}
+
+.productRow aside {
+    box-shadow: 0px 0px 10px 2px #ccc;
+    padding: 15px;
+}
+
+.productRow aside ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.productRow aside ul li {
+    padding: 7px;
+    cursor: pointer;
+    color: rgb(98, 0, 255);
+}
+
+.productlist {
+    box-shadow: 0px 0px 10px 2px #ccc;
+    padding: 20px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.productItems {
+    box-shadow: 0px 0px 10px 2px #ccc;
+    margin-top: 20px;
+}
+
+.productItems img {
+    width: 100%;
+}
+
+.productItems h3 {
+    font-size: 12px;
+    padding: 10px 0px;
+    background-color: yellow;
+    text-align: center;
+}
+
+.priceCart {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+button {
+    background-color: #007bff;
+    /* nice blue */
+    color: white;
+    /* visible text */
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.activeCat
+{
+    background-color: rgb(173, 125, 125);
+    color: white;
+}
