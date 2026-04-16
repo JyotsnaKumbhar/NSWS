@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Notes</title>
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>📝 Smart Notes</h1>
+
+    <!-- Search -->
+    <input 
+      type="text" 
+      id="search" 
+      placeholder="🔍 Search notes..." 
+    />
+
+    <!-- Add Note Form -->
+    <form id="form">
+      <input 
+        type="text" 
+        id="input" 
+        placeholder="✍️ Enter a note..." 
+        required 
+      />
+      <button type="submit">Add</button>
+    </form>
+
+    <!-- Notes List -->
+    <ul id="list"></ul>
+  </div>
+
+  <!-- JS Entry -->
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
