@@ -1,0 +1,118 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Background */
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* MAIN BOX */
+.container {
+  background: white;
+  padding: 25px;
+  width: 350px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+/* Title */
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Inputs */
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+/* Focus effect */
+input:focus, select:focus {
+  border-color: #667eea;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 8px;
+  background: #667eea;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #5a67d8;
+}
+
+/* List */
+ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+/* Item */
+li {
+  background: #f9f9f9;
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Completed */
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Action buttons */
+li button {
+  width: auto;
+  margin-left: 5px;
+  padding: 5px 8px;
+  font-size: 12px;
+}
+
+/* Toggle */
+.toggle {
+  background: #48bb78;
+}
+
+/* Delete */
+.delete {
+  background: #f56565;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+.row input {
+  flex: 1;
+}
+
+.row button {
+  width: auto;
+}
