@@ -1,118 +1,60 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-/* Background */
 body {
-  height: 100vh;
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+  padding: 20px;
 }
 
-/* MAIN BOX */
-.container {
-  background: white;
-  padding: 25px;
-  width: 350px;
-  border-radius: 15px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+h1 {
   text-align: center;
 }
 
-/* Title */
-h1 {
-  margin-bottom: 20px;
-  color: #333;
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
 }
 
-/* Inputs */
-input, select {
-  width: 100%;
-  padding: 10px;
-  margin: 8px 0;
-  border-radius: 8px;
-  border: 1px solid #ddd;
-  outline: none;
-}
-
-/* Focus effect */
-input:focus, select:focus {
-  border-color: #667eea;
-}
-
-/* Button */
-button {
-  width: 100%;
-  padding: 10px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 8px;
-  background: #667eea;
-  color: white;
-  cursor: pointer;
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   transition: 0.3s;
 }
 
-button:hover {
-  background: #5a67d8;
+.card:hover {
+  transform: scale(1.03);
 }
 
-/* List */
-ul {
-  list-style: none;
-  margin-top: 10px;
+.title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-/* Item */
-li {
-  background: #f9f9f9;
-  padding: 10px;
-  margin-top: 8px;
-  border-radius: 8px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* Completed */
-.completed {
-  text-decoration: line-through;
-  color: gray;
-}
-
-/* Action buttons */
-li button {
-  width: auto;
-  margin-left: 5px;
-  padding: 5px 8px;
+.status {
+  padding: 5px 10px;
+  border-radius: 20px;
   font-size: 12px;
+  display: inline-block;
 }
 
-/* Toggle */
-.toggle {
-  background: #48bb78;
+.done {
+  background: #4caf50;
+  color: white;
 }
 
-/* Delete */
-.delete {
-  background: #f56565;
+.todo {
+  background: #ff9800;
+  color: white;
 }
 
-.row {
-  display: flex;
-  gap: 10px;
-}
-
-.row input {
-  flex: 1;
-}
-
-.row button {
-  width: auto;
+select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-left: 10px;
+  width: 20%;
 }

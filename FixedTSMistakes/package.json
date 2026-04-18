@@ -1,7 +1,7 @@
 {
-  "name": "interactivetodoappnew",
+  "name": "taskflow-ts",
   "version": "1.0.0",
-  "description": "✅ Modules\r storage.js, ui.js, filter.js\r ✅ DOM Manipulation\r createElement, innerHTML, appendChild\r ✅ Event Delegation\r One listener on <ul> handles all buttons\r ✅ LocalStorage\r Persistent data\r ✅ Functional Programming\r filter(), map() style usage",
+  "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -10,7 +10,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "typescript": "^6.0.3"
   }
 }
