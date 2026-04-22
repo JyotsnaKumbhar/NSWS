@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  justify-content: center;
+  background-color: antiquewhite;
+}
+.top-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 10px;
+}
+
+header h1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+}
+
+header button {
+  margin-left: auto;
+}
+.search-bar {
+  width: 30%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  background-color: #cccdd1;
+}
+
+.search-bar input {
+  padding: 8px;
+  width: 250px;
+ }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 20px;
+}
+
+.card {
+  border: 1px solid #2d1b7a;
+  padding: 10px;
+}
+
+h1 {
+  color: blue;
+  text-align: center;
+}
