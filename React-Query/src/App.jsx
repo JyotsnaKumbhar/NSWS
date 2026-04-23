@@ -6,10 +6,10 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* 📋 List Page */}
+        {/* List Page */}
         <Route path="/" element={<ProductList />} />
 
-        {/* 🔍 Detail Page */}
+        {/* Detail Page */}
         <Route path="/product/:id" element={<ProductDetail />} />
       </Routes>
     </BrowserRouter>
