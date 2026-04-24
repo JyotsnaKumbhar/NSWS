@@ -1,0 +1,171 @@
+/* Main container (3 columns side by side) */
+.app {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  background-color: #1e1e2f;
+  height: 100vh;
+}
+
+/* Each column */
+.column {
+  flex: 1;
+  background-color: #2c2c3e;
+  border-radius: 10px;
+  padding: 15px;
+  min-height: 400px;
+  color: white;
+}
+
+/* Column title */
+.column h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+/* Task card */
+.task {
+  background-color: #3e3e55;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* Hover effect */
+.task:hover {
+  background-color: #5a5a7a;
+}
+
+.titlewrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.titlewrapper button {
+  background-color: #4CAF50; /* green */
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.titlewrapper button:hover {
+  background-color: #43a047;
+  transform: translateY(-1px);
+}
+
+.titlewrapper button:active {
+  transform: scale(0.95);
+} 
+
+.task {
+  background: rgb(165, 137, 137);
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+
+/* Title */
+.task-title {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Footer row */
+.task-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Delete button */
+.delete-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Status indicator */
+.status-indicator {
+  width: 80px;
+  height: 18px;
+  border-radius: 4px;
+}
+
+/* Colors */
+.status-indicator.planning {
+  background: blue;
+}
+
+.status-indicator.ongoing {
+  background: orange;
+}
+
+.status-indicator.done {
+  background: green;
+}
+
+.task-input {
+  padding: 8px 10px;
+  font-size: 14px;
+
+  border: 1px solid #ccc;
+  border-radius: 6px;
+
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+.task-input:focus {
+  border-color: #2193b0;
+}
+.submit-btn {
+  background: linear-gradient(135deg, #4caf50, #2e7d32);
+  color: white;
+
+  border: none;
+  padding: 8px;
+  border-radius: 6px;
+
+  font-size: 14px;
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.submit-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.submit-btn:active {
+  transform: scale(0.95);
+}
+
+.task-title {
+  cursor: grab;
+}
+
+.task-title:active {
+  cursor: grabbing;
+}
+
+.task {
+  cursor: grab;
+}
+
+.column.drop {
+  background-color: #f0f8ff;
+  border: 2px dashed #4a90e2;
+  cursor: pointer; 
+}
