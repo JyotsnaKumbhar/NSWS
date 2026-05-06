@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tailwind-app</title>
+  <link href="./src/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+</head>
+
+<body>
+  <section class="bg-[url('images/banner.jpg')] bg-cover bg-center w-[100%] h-screen">
+    <header class="p-8">
+      <div class="max-w-[1240] mx-auto flex justify-between items-center md:px-0 px-[20px]">
+        <figure>
+          <img src="images/logo.png" alt="">
+        </figure>
+        <nav class="md:w-auto w-[80%] md:h-auto 
+    h-screen  md:p-0 p-3 md:bg-transparent bg-[#003251] md:static fixed top-0 
+    left-[-100%] [z-2]">
+          <ul class="flex md:flex-row flex-col gap-7">
+            <li><a class="text-white text-[17px] font-jost uppercase" href="">about</a></li>
+            <li><a class="text-white text-[17px] font-jost uppercase" href="">products</a></li>
+            <li><a class="text-white text-[17px] font-jost uppercase" href="">plans</a></li>
+            <li><a class="text-white text-[17px] font-jost uppercase" href="">price</a></li>
+            <li><a class="text-white text-[17px] font-jost uppercase" href="">amenities</a></li>
+            <li><a class="text-white text-[17px] font-jost uppercase" href="">specification</a></li>
+            <li><a class="text-white text-[17px] font-jost uppercase" href="">gallery</a></li>
+            <li><a class="text-white text-[17px] font-jost uppercase" href="">contact-us</a></li>
+          </ul>
+        </nav>
+        <button id="mIcon" class="md:hidden block">
+          <i class="fa-solid fa-bars text-white md:hidden display-[hidden]"></i>
+        </button>
+      </div>
+      <div class="md:py=[100px] py-[20px] px-[20px] text-center">
+        <h1 class="font-jost md:text-[50px] text-[30px] pt-[150px] text-white">Live Above It All — The Pinnacle
+          <br class="md:block hidden" />
+          by STJ Group, Mohali
+        </h1>
+        <p class="text-white text-[22px] mt-4">Standing tall at 36 floors, The Pinnacle offers panoramic views,
+          futuristic engineering,
+          <br class="md:block hidden" /> and an elite lifestyle in the heart of Mohali’s booming urban landscape
+        </p>
+        <button class="bg-white p-[15px_40px] mt-5 text-[#003253] cursor-pointer hover:bg-[#003253] hover:text-white
+      duration-200 animate-bounce">Download Brochure <i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </header>
+  </section>
+  <section class="bg-white py-[70px]">
+    <div class="max-w[1240px] mx-auto grid md:grid-cols-2">
+      <figure>
+        <img class="md:w-auto w-[70%] mx-auto" src="/images/pinnacle.png" alt="">
+      </figure>
+      <article class="md:p-0 px-5">
+        <h2 class="md:text-[40px] text-2xl font-jost font-medium text-[#003253]">The Pinnacle Mohali – An Iconic <br
+            class="md:block hidden" /> Landmark of Luxury Living</h2>
+        <h3 class="mt-5 mb-5">Where Prestige, Architecture, and Lifestyle <br class="md:block hidden " /> Come
+          Together in IT City, Mohali</h3>
+        <p class="text-[16px]">The Pinnacle Developed by STJ Group under the Mohali City Centre (MCC) umbrella. Mohali
+          is more than a luxury
+          apartment—it’s an architectural masterpiece rising in the heart of IT City, Mohali. Designed by India’s
+          legendary architect Hafeez Contractor and styled by celebrity interior designer Zafar Choudhary, The Pinnacle
+          sets a new standard in urban living.</p>
+        <p class="text-[16px]">With expansive 3 BHK, 4 BHK apartments, and exclusive penthouses starting from ₹3 Crore,
+          this G+35 icon
+          offers breathtaking views, modern engineering, and unmatched elegance. </p>
+        <button class="bg-[#003253] p-[12px_24px] text-white hover:scale-110 duration-200">Read More</button>
+      </article>
+    </div>
+  </section>
+  <section
+    class="text-white text-center  md:h-[500pxl py-[50px] bg:py-[50px] py-[40px] w-[100%] bg-[url('/images/counter.jpg')] bg-center bg-cover md:h-[500px]">
+    <h1 class="font-medium md:text-[30px] text-2xl">The Pinnacle in Numbers</h1>
+    <p class="text-20px mt-3">A quick look at the scale, design, and exclusivity that defines luxury living at The
+      Pinnacle Mohali.</p>
+
+    <div class="max-w-[1240px] mt-10 mx-auto grid md:grid-cols-5 gap-5 grid-cols-2">
+      <div class="text-white flex group relative flex-col justify-center items-center">
+        <img class="group-hover:scale-150 duration-200" src="/images/1.png" alt="">
+        <h3 class="text-[50px] font-medium">8</h3>
+        <p class="text-[23px]">Acres Land Area</p>
+        <div class="absolute h-[80%] w-[1px] bg-[#ccc] right-0"></div>
+      </div>
+
+
+      <div class="text-white flex flex-col group relative justify-center items-center">
+        <img class="group-hover:scale-150 duration-200" src="/images/2.png" alt="">
+        <h3 class="text-[50px] font-medium">700</h3>
+        <p class="text-[23px]">Residences</p>
+        <div class="absolute h-[80%] w-[1px] bg-[#ccc] right-0"></div>
+      </div>
+
+      <div class="text-white flex flex-col group relative justify-center items-center">
+        <img class="group-hover:scale-150 duration-200" src="/images/3.png" alt="">
+        <h3 class="text-[50px] font-medium">6</h3>
+        <p class="text-[23px]">6 Towers G+36</p>
+        <div class="absolute h-[80%] w-[1px] bg-[#ccc] right-0"></div>
+      </div>
+
+      <div class="text-white flex flex-col group relative justify-center items-center">
+        <img class="group-hover:scale-150 duration-200" src="/images/4.png" alt="">
+        <h3 class="text-[50px] font-medium">100000</h3>
+        <p class="text-[23px]">Sq ft Club House</p>
+        <div class="absolute h-[80%] w-[1px] bg-[#ccc] right-0"></div>
+      </div>
+
+      <div class="text-white flex flex-col group relative justify-center items-center">
+        <img class="group-hover:scale-150 duration-200" src="/images/5.png" alt="">
+        <h3 class="text-[50px] font-medium">1400+</h3>
+        <p class="text-[23px]">Car Parking</p>
+        <div class="absolute h-[80%] w-[1px] bg-[#ccc] right-0"></div>
+      </div>
+    </div>
+  </section>
+</body>
+<script src="./src/app.js"></script>
+
+</html>
