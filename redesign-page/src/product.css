@@ -1,0 +1,115 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page */
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+}
+
+/* Container */
+.container {
+  max-width: 1100px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+/* Layout */
+.product-wrapper {
+  display: flex;
+  gap: 40px;
+}
+
+/* Images */
+.image-section {
+  width: 40%;
+}
+
+.image-section img {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Content */
+.content-section {
+  width: 60%;
+}
+
+/* Title */
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Rating */
+.rating {
+  color: #f59e0b;
+  margin-bottom: 10px;
+}
+
+/* Price */
+.price {
+  font-size: 22px;
+  color: green;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Description */
+.description {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.buttons {
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+/* Primary Button */
+.btn:first-child {
+  background: #2563eb;
+  color: white;
+}
+
+/* Secondary Button */
+.btn:last-child {
+  background: #e5e7eb;
+}
+
+/* Hover Effects */
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Links */
+.links a {
+  display: block;
+  color: #2563eb;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
