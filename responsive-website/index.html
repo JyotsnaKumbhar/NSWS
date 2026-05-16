@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Shopping Page</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- =========================
+        NAVBAR
+  ========================== -->
+
+    <nav class="
+    bg-white
+    shadow-md
+    sticky
+    top-0
+    z-50
+  ">
+
+        <div class="
+      max-w-7xl
+      mx-auto
+
+      px-6
+      py-4
+
+      flex
+      flex-col
+      md:flex-row
+
+      items-center
+      justify-between
+
+      gap-4
+    ">
+
+            <!-- LOGO -->
+            <h1 class="
+        text-3xl
+        font-bold
+        text-black
+      ">
+                Shopping App
+            </h1>
+
+            <!-- MENU -->
+            <ul class="
+        flex
+        flex-col
+        md:flex-row
+
+        gap-4
+
+        text-gray-700
+        font-medium
+      ">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <!-- SEARCH -->
+            <div class="
+        flex
+        items-center
+
+        border
+        rounded-lg
+        overflow-hidden
+      ">
+
+                <input type="text" placeholder="Search products..." class="
+            px-4
+            py-2
+            outline-none
+          " />
+
+                <button class="
+          bg-black
+          text-white
+
+          px-4
+          py-2
+        ">
+                    Search
+                </button>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- =========================
+        HERO SECTION
+  ========================== -->
+
+    <section class="
+    max-w-7xl
+    mx-auto
+
+    px-6
+    py-12
+
+    flex
+    flex-col
+    lg:flex-row
+
+    items-center
+
+    gap-10
+  ">
+
+        <!-- TEXT -->
+        <div class="flex-1">
+
+            <h2 class="
+        text-4xl
+        md:text-6xl
+
+        font-bold
+
+        leading-tight
+        mb-6
+      ">
+                Big Sale <br />
+                Up To 50% Off
+            </h2>
+
+            <p class="
+        text-gray-600
+        text-lg
+        mb-6
+      ">
+                Discover trending products with amazing discounts.
+            </p>
+
+            <button class="
+        bg-black
+        text-white
+
+        px-8
+        py-4
+
+        rounded-xl
+
+        hover:bg-gray-800
+
+        transition
+      ">
+                Shop Now
+            </button>
+
+        </div>
+
+        <!-- IMAGE -->
+        <div class="flex-1">
+
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30" class="
+          w-full
+          rounded-3xl
+          shadow-xl
+        " />
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+        PRODUCTS SECTION
+  ========================== -->
+
+    <section class="
+    max-w-7xl
+    mx-auto
+
+    px-6
+    pb-16
+  ">
+
+        <!-- TITLE -->
+        <div class="
+      flex
+      items-center
+      justify-between
+
+      mb-8
+    ">
+
+            <h2 class="
+        text-3xl
+        font-bold
+      ">
+                Featured Products
+            </h2>
+
+            <button class="
+        border
+        px-5
+        py-2
+        rounded-lg
+      ">
+                View All
+            </button>
+
+        </div>
+
+        <!-- PRODUCTS GRID -->
+        <div class="
+      grid
+      grid-cols-1
+      sm:grid-cols-2
+      lg:grid-cols-4
+
+      gap-8
+    ">
+
+            <!-- PRODUCT CARD -->
+            <div class="
+        bg-white
+        rounded-2xl
+        shadow-md
+
+        overflow-hidden
+
+        hover:shadow-xl
+
+        transition
+      ">
+
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" class="
+            w-full
+            h-64
+            object-cover
+          " />
+
+                <div class="p-5">
+
+                    <h3 class="
+            text-xl
+            font-semibold
+            mb-2
+          ">
+                        Running Shoes
+                    </h3>
+
+                    <p class="
+            text-gray-600
+            mb-4
+          ">
+                        Comfortable and stylish sneakers.
+                    </p>
+
+                    <div class="
+            flex
+            items-center
+            justify-between
+          ">
+
+                        <span class="
+              text-2xl
+              font-bold
+            ">
+                            ₹990
+                        </span>
+
+                        <button class="
+              bg-black
+              text-white
+
+              px-4
+              py-2
+
+              rounded-lg
+            ">
+                            Add
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- PRODUCT CARD -->
+            <div class="
+        bg-white
+        rounded-2xl
+        shadow-md
+
+        overflow-hidden
+
+        hover:shadow-xl
+
+        transition
+      ">
+
+                <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9" class="
+            w-full
+            h-64
+            object-cover
+          " />
+
+                <div class="p-5">
+
+                    <h3 class="
+            text-xl
+            font-semibold
+            mb-2
+          ">
+                        Smart Phone
+                    </h3>
+
+                    <p class="
+            text-gray-600
+            mb-4
+          ">
+                        Latest flagship mobile device.
+                    </p>
+
+                    <div class="
+            flex
+            items-center
+            justify-between
+          ">
+
+                        <span class="
+              text-2xl
+              font-bold
+            ">
+                            ₹7990
+                        </span>
+
+                        <button class="
+              bg-black
+              text-white
+
+              px-4
+              py-2
+
+              rounded-lg
+            ">
+                            Add
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- PRODUCT CARD -->
+            <div class="
+        bg-white
+        rounded-2xl
+        shadow-md
+
+        overflow-hidden
+
+        hover:shadow-xl
+
+        transition
+      ">
+
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e" class="
+            w-full
+            h-64
+            object-cover
+          " />
+
+                <div class="p-5">
+
+                    <h3 class="
+            text-xl
+            font-semibold
+            mb-2
+          ">
+                        Headphones
+                    </h3>
+
+                    <p class="
+            text-gray-600
+            mb-4
+          ">
+                        Premium sound quality experience.
+                    </p>
+
+                    <div class="
+            flex
+            items-center
+            justify-between
+          ">
+
+                        <span class="
+              text-2xl
+              font-bold
+            ">
+                            ₹1490
+                        </span>
+
+                        <button class="
+              bg-black
+              text-white
+
+              px-4
+              py-2
+
+              rounded-lg
+            ">
+                            Add
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- PRODUCT CARD -->
+            <div class="
+        bg-white
+        rounded-2xl
+        shadow-md
+
+        overflow-hidden
+
+        hover:shadow-xl
+
+        transition
+      ">
+
+                <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f" class="
+            w-full
+            h-64
+            object-cover
+          " />
+
+                <div class="p-5">
+
+                    <h3 class="
+            text-xl
+            font-semibold
+            mb-2
+          ">
+                        Camera
+                    </h3>
+
+                    <p class="
+            text-gray-600
+            mb-4
+          ">
+                        Capture beautiful moments easily.
+                    </p>
+
+                    <div class="
+            flex
+            items-center
+            justify-between
+          ">
+
+                        <span class="
+              text-2xl
+              font-bold
+            ">
+                            ₹4990
+                        </span>
+
+                        <button class="
+              bg-black
+              text-white
+
+              px-4
+              py-2
+
+              rounded-lg
+            ">
+                            Add
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+        FOOTER
+  ========================== -->
+
+    <footer class="
+    bg-black
+    text-white
+
+    py-8
+    mt-10
+  ">
+
+        <div class="
+      max-w-7xl
+      mx-auto
+
+      px-6
+
+      text-center
+    ">
+
+            <h2 class="
+        text-2xl
+        font-bold
+        mb-4
+      ">
+                Shopping App
+            </h2>
+
+            <p class="text-gray-400">
+                © 2026 All Rights Reserved
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
