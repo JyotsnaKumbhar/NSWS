@@ -13,7 +13,7 @@ let tasks = getTasks();
 // Initial render
 renderTasks(tasks, list);
 
-// ➕ Add Task
+// Add Task
 addBtn.addEventListener("click", () => {
   if (!input.value.trim()) return;
 
@@ -27,7 +27,7 @@ addBtn.addEventListener("click", () => {
   input.value = "";
 });
 
-// 🔁 Event Delegation (Edit/Delete/Complete)
+// Event Delegation (Edit/Delete/Complete)
 list.addEventListener("click", (e) => {
   const id = e.target.dataset.id;
 
@@ -48,13 +48,13 @@ list.addEventListener("click", (e) => {
   renderTasks(tasks, list);
 });
 
-// 🔍 Search
+// Search
 searchInput.addEventListener("input", () => {
   const filtered = searchTasks(tasks, searchInput.value);
   renderTasks(filtered, list);
 });
 
-// 🎯 Filter
+// Filter
 filter.addEventListener("change", () => {
   const filtered = filterTasks(tasks, filter.value);
   renderTasks(filtered, list);
