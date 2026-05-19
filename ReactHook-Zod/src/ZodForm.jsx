@@ -54,7 +54,7 @@ function ZodForm() {
           <label htmlFor="fourth">Email : </label>
           <input
             id="second"
-            {...register("name")}
+            {...register("email")}
             className={errors.name ? "error" : ""}
           />
           {errors.email && <span>{errors.email.message}</span>}
